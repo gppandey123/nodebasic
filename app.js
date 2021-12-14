@@ -1,7 +1,7 @@
 const http = require('http');
 
 const server = http.createServer((req,res) => {
-    console.log(req.url, req.method, req.headers);
+    console.log(req.url, req.method);
     res.setHeader('content-Type', 'text/html');
     res.write('<html>');
     res.write('<head><title>Baic code</title></head>');
